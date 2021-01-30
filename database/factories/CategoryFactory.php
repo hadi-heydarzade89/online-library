@@ -11,13 +11,7 @@ use Illuminate\Support\Facades\DB;
 
 $factory->define(Category::class, function (Faker $faker) {
     return [
-        [
-            'name' => Str::random(10),
-            'status' => 'enable',
-        ],
-        [
-            'name' => Str::random(10),
-            'status' => 'disable',
-        ]
+        'name' => $faker->name,
+        'status' => $faker->status
     ];
 });
