@@ -12,8 +12,6 @@ class BookingSeeder extends Seeder
      */
     public function run()
     {
-//        DB::table('booking')->insert([
-//
-//        ]);
+        factory(App\Models\Booking::class, 10)->create();
     }
 }
