@@ -12,6 +12,6 @@ use Illuminate\Support\Facades\DB;
 $factory->define(Category::class, function (Faker $faker) {
     return [
         'name' => $faker->name,
-        'status' => 'enable'
+        'status' => $faker->randomElement(['enable', 'disable'])
     ];
 });
