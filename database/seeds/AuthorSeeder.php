@@ -1,9 +1,8 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use Illuminate\Support\Facades\DB;
 
-class BookingSeeder extends Seeder
+class AuthorSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -12,6 +11,6 @@ class BookingSeeder extends Seeder
      */
     public function run()
     {
-        factory(App\Models\Booking::class, 10)->create();
+        factory(App\Models\Author::class, 20)->create();
     }
 }
